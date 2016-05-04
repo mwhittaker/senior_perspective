@@ -1,0 +1,77 @@
+\documentclass{beamer}
+
+\usepackage{pdflscape}
+\usepackage{tikz}
+
+% http://tex.stackexchange.com/a/223201
+\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+
+\begin{document}
+\begin{landscape}
+\begin{frame}
+  \begin{center}
+    \tikzset{class/.style={draw, minimum height=0.9cm, minimum width=1.9cm}}
+    \tikzset{one/.style={text opacity=1, fill opacity=0.5, fill=blue}}
+    \tikzset{two/.style={text opacity=1, fill opacity=0.5, fill=blue!20!red}}
+    \tikzset{thr/.style={text opacity=1, fill opacity=0.5, fill=blue!40!red}}
+    \tikzset{fou/.style={text opacity=1, fill opacity=0.5, fill=blue!60!red}}
+    \tikzset{fiv/.style={text opacity=1, fill opacity=0.5, fill=blue!80!red}}
+    \tikzset{six/.style={text opacity=1, fill opacity=0.5, fill=red}}
+    \tikzset{summer/.style={
+      draw, minimum height=0.4cm, minimum width=7.9cm, fill=yellow!20
+    }}
+
+    \begin{tikzpicture}
+      \node[summer] (google2) at (3, -0.8) {Google};
+
+      \node[class,six] (CS6110) at (0, 0.0) {CS 6110};
+      \node[class,fou] (CS4810) at (2, 0.0) {CS 4810};
+      \node[class,fou] (CS4120) at (4, 0.0) {CS 4120};
+      \node[class,fou] (CS4321) at (6, 0.0) {CS 4321};
+
+      \node[class,six] (CS6410) at (0, 1.0) {CS 6410};
+      \node[class,thr] (CS3100) at (2, 1.0) {CS 3100};
+      \node[class,fiv] (CS5220) at (4, 1.0) {CS 5220};
+
+      \node[summer] (google1) at (3, 1.8) {Google};
+
+      \node[class,fiv] (CS5300) at (0, 2.6) {CS 5300};
+      \node[class,fiv] (CS5430) at (2, 2.6) {CS 5430};
+      \node[class,fou] (CS4320) at (4, 2.6) {CS 4320};
+      \node[class,fiv] (CS5412) at (6, 2.6) {CS 5412};
+
+      \node[class,fou] (ECE4450) at (0, 3.6) {ECE 4450};
+      \node[class,fou] (ECE4750) at (2, 3.6) {ECE 4750};
+      \node[class,fou] (CS4410)  at (4, 3.6) {CS 4410};
+      \node[class,fou] (CS4110)  at (6, 3.6) {CS 4110};
+
+      \node[summer] (MongoDB) at (3, 4.4) {MongoDB};
+
+      \node[class,two] (CS2300)  at (0, 5.2) {CS 2300};
+      \node[class,fou] (CS4850)  at (2, 5.2) {CS 4850};
+      \node[class,fou] (CS4820)  at (4, 5.2) {CS 4820};
+      \node[class,thr] (ECE3140) at (6, 5.2) {ECE 3140};
+
+      \node[class,fou] (CS4780)  at (0, 6.2) {CS 4780};
+      \node[class,two] (ECE2100) at (2, 6.2) {ECE 2100};
+      \node[class,thr] (CS3110)  at (4, 6.2) {CS 3110};
+      \node[class,two] (CS2850)  at (6, 6.2) {CS 2850};
+
+      \node[summer] (Qualcomm) at (3, 7.0) {Qualcomm};
+
+      \node[class,two] (CS2043)  at (0, 7.8) {CS 2043};
+      \node[class,two] (ECE2300) at (2, 7.8) {ECE 2300};
+      \node[class,two] (CS2110)  at (4, 7.8) {CS 2110};
+      \node[class,two] (CS2800)  at (6, 7.8) {CS 2800};
+
+      \node[class,one] (CS1110) at (0, 8.8) {CS 1110};
+    \end{tikzpicture}
+  \end{center}
+\end{frame}
+\end{landscape}
+
+\begin{frame}{Tips and Tricks}
+\end{frame}
+\end{document}
